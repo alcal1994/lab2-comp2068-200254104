@@ -1,0 +1,49 @@
+<% include ../partials/header %>
+  <!--Main container. Everything must be contained within a top-level container.-->
+  <div class="container-fluid">
+
+    <!--First row (only row)-->
+    <div class="row extra_margin">
+
+      <!-- First column (smaller of the two). Will appear on the left on desktop and on the top on mobile. -->
+      <div class="col-md-4 col-sm-12 col-xs-12">
+
+          <!-- Div to center the header image/name -->
+          <div class="text-center">
+
+              <!-- Placeholder image using Placeholder.com -->
+              <img src="http://www.georgiangrizzlies.ca/sports/mrugby/2016-17/photos/Albert-Calamatta.jpg?max_width=160&max_height=210" class="img-rounded"/>
+
+              <!-- Header text (Person's name, age, program) -->
+              <h2>Albert Calamatta</h2>
+              <p class = "subtitle">Age: 21</p>
+              <p class = "subtitle">Program: Computer Programming</p>
+
+          </div>
+
+      </div> <!-- End Col 1 -->
+
+      <!-- Second column - for small and extra-small screens, will use whatever # cols is available -->
+      <div class="col-md-8 col-sm-* col-xs-*">
+
+        <!-- "Lead" text at top of column. -->
+        <p class="lead">Hello, my name is Albert Calamatta and I am in the computer programming program at Georgian college.
+           I am new to advanced web Programming and looking to develop my skills to create functional custom websites.</p>
+
+        <!-- Horizontal rule to add some spacing between the "lead" and body text -->
+        <hr />
+
+
+        <!-- Body text (paragraph 1) -->
+        <p>
+          Outside of programming I enjoy playing various sports, being outdoors, and gaming.
+          During my time in school I bartend and work security for extra cash.</p>
+
+
+      </div> <!-- End column 2 -->
+
+    </div> <!-- End row 1 -->
+
+  </div> <!-- End main container -->
+
+<% include ../partials/footer %>

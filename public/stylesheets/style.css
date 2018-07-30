@@ -19,4 +19,22 @@ body {
       body .container .card .actions form {
         display: inline; }
 
+.subtitle {
+  color: grey;
+  font-size: 18px; }
+
+.img-rounded {
+  border-radius: 50%; }
+
+.img-rounded:hover {
+  -webkit-transform: scale(1.25);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.25);
+  /* Firefox */
+  -ms-transform: scale(1.25);
+  /* IE 9 */
+  -o-transform: scale(1.25);
+  /* Opera */
+  transform: scale(1.25); }
+
 /*# sourceMappingURL=style.css.map */

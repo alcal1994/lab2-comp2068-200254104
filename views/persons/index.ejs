@@ -1,0 +1,38 @@
+<% include ../partials/header %>
+
+<section>
+  <div>
+    <a href="/persons/new">New person</a>
+  </div>
+
+  <div class="row">
+
+    <% for ( let person of persons ) { %>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <% if ( person.image ) { %>
+              <div class="image">
+                <img src="/images/<%= person.image %>" class="img-thumbnail img-fluid">
+              </div>
+            <% } %>
+            <h5 class="card-title">
+              <%= person.name %>
+            </h5>
+
+            <p>
+              <%= person.description %>
+            </p>
+
+            <p>
+              <%= person.price %>
+            </p>
+          </div>
+        </div>
+      </div>
+    <% } %>
+
+  </div>
+</section>
+
+<% include ../partials/footer %>

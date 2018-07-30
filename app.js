@@ -8,8 +8,8 @@ var sassMiddleware = require('node-sass-middleware');
 // this is our home route
 var indexRouter = require('./routes/index');
 
-// add the products routes
-var productsRouter = require('./routes/products');
+// add the persons routes
+var personsRouter = require('./routes/persons');
 
 var app = express();
 
@@ -37,8 +37,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // this is our home route
 app.use('/', indexRouter);
 
-// this is our products router
-app.use('/products', productsRouter);
+// this is our persons router
+app.use('/persons', personsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

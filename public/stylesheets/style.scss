@@ -19,7 +19,7 @@ body {
 
     .card {
       margin-bottom: 1em;
-      
+
       .btn {
         background-color: $button-colour;
         border: $button-colour;
@@ -32,4 +32,20 @@ body {
       }
     }
   }
+}
+//custom css outside of bootstrap
+.subtitle {
+    color: grey;
+    font-size: 18px;
+}
+
+.img-rounded {
+    border-radius: 50%;
+}
+.img-rounded:hover {
+  -webkit-transform:scale(1.25); /* Safari and Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* IE 9 */
+  -o-transform:scale(1.25); /* Opera */
+   transform:scale(1.25);
 }
